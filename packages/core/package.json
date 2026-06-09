@@ -1,0 +1,23 @@
+{
+  "name": "@dzg/core",
+  "version": "1.0.0",
+  "description": "道之光·核心算法库 - 八字引擎/五行系统/九宫飞星/大运流年/神煞",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  }
+}

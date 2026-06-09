@@ -1,0 +1,28 @@
+{
+  "name": "daozhiguang-fate-engine",
+  "version": "1.0.0",
+  "description": "道之光·命理AI引擎 - 风水命理AI决策系统",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build:core && npm run build:frontend",
+    "build:core": "cd packages/core && npx tsc --outDir dist --skipLibCheck && cd ../..",
+    "build:frontend": "cd apps/web-console && npx next build --no-lint && cd ../..",
+    "build:server": "cd packages/server && npx tsc --outDir dist --skipLibCheck && cd ../..",
+    "test": "npm run test --workspaces",
+    "dev:core": "npm run dev -w packages/core",
+    "dev:server": "npm run dev -w packages/server",
+    "dev:web": "npm run dev -w packages/web",
+    "start": "npx tsx packages/server/src/lite-main.ts",
+    "start:prod": "npx tsx packages/server/src/lite-main.ts",
+    "lint": "eslint packages/*/src",
+    "docs": "typedoc --out docs/api packages/core/src"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
