@@ -8,7 +8,7 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "npm run build:core",
+    "build": "echo 'Skipping build - tsx handles runtime compilation'",
     "build:core": "cd packages/core && npx tsc --outDir dist --skipLibCheck && cd ../..",
     "build:server": "cd packages/server && npx tsc --outDir dist --skipLibCheck && cd ../..",
     "test": "npm run test --workspaces",
