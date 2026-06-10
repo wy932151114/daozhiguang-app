@@ -8,9 +8,8 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "npm run build:core && npm run build:frontend",
+    "build": "npm run build:core",
     "build:core": "cd packages/core && npx tsc --outDir dist --skipLibCheck && cd ../..",
-    "build:frontend": "cd apps/web-console && npx next build --no-lint && cd ../..",
     "build:server": "cd packages/server && npx tsc --outDir dist --skipLibCheck && cd ../..",
     "test": "npm run test --workspaces",
     "dev:core": "npm run dev -w packages/core",
