@@ -1,7 +1,7 @@
 {
   "name": "@dzg/server",
   "version": "1.0.0",
-  "description": "道之光·命理AI系统 — 后端服务 (NestJS)",
+  "description": "龙道命理计算游戏 — 后端服务 (NestJS)",
   "private": true,
   "scripts": {
     "build": "nest build",

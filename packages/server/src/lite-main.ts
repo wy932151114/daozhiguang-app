@@ -104,7 +104,7 @@ async function bootstrap() {
 
   const port = 4000;
   await app.listen(port, '0.0.0.0');
-  console.log(`\n🚀 DZS-OS 道之光命理AI系统 (Lite) 已启动!
+  console.log(`\n🚀 龙道命理计算游戏 (Lite) 已启动!
   📡 API: http://localhost:${port}/api/v1
   🌐 Windows: http://172.31.138.38:${port}/api/v1
   📋 健康检查: http://localhost:${port}/api/v1/health

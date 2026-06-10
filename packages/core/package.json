@@ -1,7 +1,7 @@
 {
   "name": "@dzg/core",
   "version": "1.0.0",
-  "description": "道之光·核心算法库 - 八字引擎/五行系统/九宫飞星/大运流年/神煞",
+  "description": "龙道命理计算游戏 - 核心算法库（八字引擎/五行系统/九宫飞星/大运流年/神煞）",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
