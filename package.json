@@ -1,7 +1,7 @@
 {
   "name": "daozhiguang-fate-engine",
   "version": "1.0.0",
-  "description": "龙道命理计算游戏 - 命理AI决策系统",
+  "description": "\u9f99\u9053\u547d\u7406\u8ba1\u7b97\u6e38\u620f - \u547d\u7406AI\u51b3\u7b56\u7cfb\u7edf",
   "private": true,
   "workspaces": [
     "packages/*",
@@ -18,7 +18,9 @@
     "start": "npx tsx packages/server/src/lite-main.ts",
     "start:prod": "npx tsx packages/server/src/lite-main.ts",
     "lint": "eslint packages/*/src",
-    "docs": "typedoc --out docs/api packages/core/src"
+    "docs": "typedoc --out docs/api packages/core/src",
+    "railway-build": "npm install && npm run build:core",
+    "railway-start": "npx tsx packages/server/src/lite-main.ts"
   },
   "engines": {
     "node": ">=20.0.0",

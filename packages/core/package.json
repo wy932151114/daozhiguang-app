@@ -1,13 +1,13 @@
 {
   "name": "@dzg/core",
   "version": "1.0.0",
-  "description": "龙道命理计算游戏 - 核心算法库（八字引擎/五行系统/九宫飞星/大运流年/神煞）",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "description": "\u9f99\u9053\u547d\u7406\u8ba1\u7b97\u6e38\u620f - \u6838\u5fc3\u7b97\u6cd5\u5e93\uff08\u516b\u5b57\u5f15\u64ce/\u4e94\u884c\u7cfb\u7edf/\u4e5d\u5bab\u98de\u661f/\u5927\u8fd0\u6d41\u5e74/\u795e\u715e\uff09",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
     }
   },
   "scripts": {
