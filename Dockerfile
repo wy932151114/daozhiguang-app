@@ -21,7 +21,10 @@ COPY . .
 # 编译 @dzg/core（server 需要在 node_modules 中引用其 dist/）
 RUN cd packages/core && npx tsc --outDir dist --skipLibCheck && cd ../..
 
-# 暴露端口
+# 设置 Railway 期望的端口
+ENV PORT=8080
+
+EXPOSE 8080
 
 # 启动
 CMD ["npx", "tsx", "packages/server/src/lite-main.ts"]
