@@ -22,7 +22,6 @@ COPY . .
 RUN cd packages/core && npx tsc --outDir dist --skipLibCheck && cd ../..
 
 # 暴露端口
-EXPOSE 4000
 
 # 启动
 CMD ["npx", "tsx", "packages/server/src/lite-main.ts"]
