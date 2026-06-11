@@ -102,7 +102,7 @@ async function bootstrap() {
     });
   });
 
-  const port = 4000;
+  const port = parseInt(process.env.PORT || '4000', 10);
   await app.listen(port, '0.0.0.0');
   console.log(`\n🚀 龙道命理计算游戏 (Lite) 已启动!
   📡 API: http://localhost:${port}/api/v1
