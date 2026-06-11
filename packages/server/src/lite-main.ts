@@ -56,7 +56,7 @@ async function bootstrap() {
   // ============================================================
   const path = require('path');
   const fs = require('fs');
-  const frontendOutDir = path.join(__dirname, '../../apps/web-console/out');
+  const frontendOutDir = path.join(process.cwd(), 'apps/web-console/out');
   if (fs.existsSync(frontendOutDir)) {
     // 服务静态文件
     app.getHttpAdapter().use(express.static(frontendOutDir));
