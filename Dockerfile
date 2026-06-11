@@ -21,7 +21,7 @@ COPY . .
 # 编译 @dzg/core（server 在 node_modules/@dzg/core 中通过 workspace 软链接引用 dist/）
 # 注意：npm workspace 创建了 node_modules/@dzg/core -> ../../packages/core 的软链接
 # 编译输出到 packages/core/dist/，通过软链接可被 require
-RUN cd packages/core && npx tsc --outDir dist --skipLibCheck && cd ../.. && ls -la node_modules/@dzg/core/dist/index.js
+RUN cd packages/core && npx tsc --outDir dist --skipLibCheck && cd ../..
 
 # 构建前端静态文件（lite-main.ts 会自动托管 out/ 目录）
 RUN cd apps/web-console && npx next build && cd ../..
